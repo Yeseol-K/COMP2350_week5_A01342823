@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"> </script>
+	</head>
+	<body>
+		<section class="section">
+			<div class="maincolumns columns is-desktop is-vcentered">
+				<div class="column is-10 is-offset-1 notification is-info is-light box container">
+					<div class="title">
+						To do list
+					</div>
+					<% if (locals.allTodos) { %>
+						<div class="table-container">
+						<table class="table is-bordered is-hoverable is-striped is-narrow">
+							<thead>
+							<tr>
+								<th> # </th>
+								<th> Todo </th>
+							</tr>
+							</thead>
+							<% let i=0; %>
+							<% for(i=0; i < allTodos.length; i++) { %>
+							<tr>
+								<td><%= allTodos[i].todo_id %></td>
+								<td><%= allTodos[i].todo_name %></td>
+							</tr>
+							<% } %>
+							<tfoot>
+								<tr> <td colspan="2">
+								There are <%= i %> todos.
+								</td> </tr>
+							</tfoot>
+						</table>
+						</div>
+					<% } %>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
