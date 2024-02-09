@@ -14,7 +14,7 @@ const dbConfigLocal = {
 	host: "localhost",
 	user: "root",
 	password: "abc123!",
-	database: "freedb_COMP2350_week4_A01342823",
+	database: "world",
 	multipleStatements: false
 };
 
