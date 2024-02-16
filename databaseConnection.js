@@ -5,8 +5,8 @@ const is_render = process.env.IS_RENDER || false;
 const dbConfigRender = {
 	host: "sql.freedb.tech",
 	user: "freedb_2350_main.",
-	password: "ADv3rDufMJB62v&",
-	database: "freedb_freedb_COMP2350_A01342823",
+	password: "m?eg6bwvU8Qz8yz",
+	database: "freedb_COMP2350_A01342823",
 	multipleStatements: false
 };
 
